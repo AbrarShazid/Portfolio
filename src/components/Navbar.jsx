@@ -4,14 +4,14 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <div  className='bg-[#3c3c3d] text-white flex justify-between items-center px-[5%] sticky z-60 top-0 shadow-sm '>
+    <div  className='bg-[#3c3c3d] h-[12vh] pt-4 md:pt-0 md:h-auto text-white md:flex md:justify-between md:items-center px-[5%] sticky z-60 top-0 shadow-sm '>
 
 
-      <div>
+      <div className='hidden md:block'>
         <img src={logo} alt="" className='w-20 h-20 rounded-lg' />
       </div>
 
-      <div className='flex gap-6'>
+      <div className='flex gap-6 '>
 <Link
   to="home"
   spy={true}
