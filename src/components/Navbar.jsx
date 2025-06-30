@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='bg-[#3c3c3d] text-white sticky top-0 z-50 shadow-sm'>
+    <div className='bg-[#3c3c3d] text-white sticky top-10 md:top-0  z-50 shadow-sm'>
      
       <div className='md:flex md:justify-between md:items-center px-[5%]'>
  
