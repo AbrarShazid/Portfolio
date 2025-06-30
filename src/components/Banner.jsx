@@ -9,7 +9,7 @@ const Banner = () => {
     <div id='home' className="min-h-screen flex items-center justify-center bg-[#3c3c3d] px-[5%] py-2  rounded-b-3xl ">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center  z-10">
         {/* Left Content */}
-        <div className="space-y-2 lg:space-y-4 text-center lg:text-left">
+        <div className="space-y-4 text-center lg:text-left">
           <div className="overflow-hidden">
             <h1 className="text-4xl sm:text-5xl  font-bold tracking-tight text-white font-primary ">
               Hello, I'm <span className="text-gray-300">Abrar Shazid</span>
