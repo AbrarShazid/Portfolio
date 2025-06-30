@@ -11,11 +11,11 @@ const Navbar = () => {
      
       <div className='md:flex md:justify-between md:items-center px-[5%]'>
  
-        <div className='flex justify-between items-center py-3 md:py-0'>
+        <div className='flex justify-between items-center '>
           <img 
             src={logo} 
             alt="" 
-            className='w-20 h-20 rounded-lg' 
+            className=' w-14 h-14  md:w-20   md:h-20 rounded-lg' 
           />
           
           
