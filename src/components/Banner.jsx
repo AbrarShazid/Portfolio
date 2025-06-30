@@ -50,7 +50,7 @@ const Banner = () => {
         </div>
 
         {/* Right Image */}
-        <div className=" hidden  md:flex  md:justify-end ">
+        <div className=" hidden  lg:flex  lg:justify-end ">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
 
             <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-white/10 to-white/30 blur-md"></div>

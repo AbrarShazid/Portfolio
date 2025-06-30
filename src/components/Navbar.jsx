@@ -53,12 +53,21 @@ const Navbar = () => {
 </Link>
 
 
+    <Link
+  to="projects"
+  spy={true}
+  smooth={true}
+  offset={-70}
+  duration={500}
+  activeClass="text-green-400 font-semibold"
+  className="cursor-pointer transition-colors duration-300"
+>
+  Projects
+</Link>
 
 
-        <Link>
-          Projects
 
-        </Link>
+
 
 
 
