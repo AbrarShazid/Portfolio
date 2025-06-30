@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='bg-[#3c3c3d] text-white sticky top-10 md:top-0  z-50 shadow-sm'>
+    <div className='bg-[#3c3c3d] text-white sticky top-0  z-[1000] shadow-sm'>
      
       <div className='md:flex md:justify-between md:items-center px-[5%]'>
  
@@ -90,7 +90,7 @@ const Navbar = () => {
 
     
       {isMenuOpen && (
-        <div className='md:hidden bg-[#3c3c3d] px-[5%] pb-4 space-y-3'>
+        <div className='md:hidden bg-[#3c3c3d]  z-[999] px-[5%] pb-4 space-y-3'>
           <MobileNavLink to="home" label="Home" onClick={() => setIsMenuOpen(false)} />
           <MobileNavLink to="about" label="About" onClick={() => setIsMenuOpen(false)} />
           <MobileNavLink to="skills" label="Skills" onClick={() => setIsMenuOpen(false)} />
