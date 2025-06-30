@@ -38,6 +38,11 @@ const Projects = () => {
         "Bill payment history",
         "Fully responsive UI"
       ],
+      challenges: "I faced the challenge of implementing Firebase Authentication. It required a solid understanding of authentication flows and proper configuration, but I overcame it through documentation and testing.",
+
+futureImp: "Future enhancements could include integrating JWT-based authorization, implementing a user dashboard, and adding a real-world payment gateway for secure transactions.",
+
+
       images: [snowPay1, snowPay2, snowPay3],
       tech: [
         { name: "React", icon: <FaReact className="text-blue-500" /> },
@@ -58,6 +63,12 @@ const Projects = () => {
         "Sort listings by rent or filter by room type",
         "Add, update, view, and delete roommate listings"
       ],
+ challenges: "I faced challenges implementing the dashboard and managing large, complex forms efficiently. It required careful state handling and UI structuring.",
+
+futureImp: "Future improvements could include adding JWT authentication, a chat feature between the person posting and the one searching for a roommate, and a booking system for reserving rooms.",
+
+
+
       images: [roommate1, roommate2, roommate3, roommate4, roommate5, roommate6, roommate7],
       tech: [
         { name: "React", icon: <FaReact className="text-blue-500" /> },
@@ -79,6 +90,13 @@ const Projects = () => {
         "Sorting by expire date",
         "Donation/Request history"
       ],
+    challenges: "One of the main challenges I faced in this project was implementing JWT authentication. However, by thoroughly studying documentation and experimenting with various solutions, I was able to successfully overcome it.",
+
+futureImp: "Future improvements could include integrating a dashboard for better user management and adding a real-time chat feature between donors and recipients to enhance communication.",
+
+
+
+
       images: [food1, food2, food3, food4, food5, food6, food7, food8],
       tech: [
         { name: "React", icon: <FaReact className="text-blue-500" /> },
@@ -105,41 +123,64 @@ const Projects = () => {
       </div>
 
       {/* DaisyUI Modal */}
-      {selectedProject && (
-        <dialog id="project_modal" className="modal modal-open" onClick={() => setSelectedProject(null)}>
-          <div className="modal-box max-w-3xl" onClick={(e) => e.stopPropagation()}>
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-bold">{selectedProject.title}</h3>
-              <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-gray-800">
-                <FiX className="text-xl" />
-              </button>
-            </div>
-            <p className="mb-2 text-sm text-gray-600">{selectedProject.description}</p>
-            <ul className="list-disc list-inside text-sm mb-3 text-gray-700">
-              {selectedProject.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-              ))}
-            </ul>
+   
+{selectedProject && (
+  <dialog id="project_modal" className="modal modal-open" onClick={() => setSelectedProject(null)}>
+    <div className="modal-box max-w-3xl" onClick={(e) => e.stopPropagation()}>
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-xl font-bold">{selectedProject.title}</h3>
+        <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-gray-800">
+          <FiX className="text-xl" />
+        </button>
+      </div>
 
-            
-            <div className="flex flex-wrap gap-2 mb-4">
-              {selectedProject.tech.map((tech, idx) => (
-                <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs">
-                  {tech.icon} {tech.name}
-                </span>
-              ))}
-            </div>
-            <div className="flex justify-between">
-              <a href={selectedProject.links.live} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">
-                <FiExternalLink /> Live
-              </a>
-              <a href={selectedProject.links.github} target="_blank" rel="noreferrer" className="btn btn-sm btn-neutral">
-                <FiGithub /> Code
-              </a>
-            </div>
-          </div>
-        </dialog>
-      )}
+      <p className="mb-2 text-sm text-gray-600">{selectedProject.description}</p>
+
+      <ul className="list-disc list-inside text-sm mb-3 text-gray-700">
+        {selectedProject.features.map((feature, idx) => (
+          <li key={idx}>{feature}</li>
+        ))}
+      </ul>
+
+      <div className="mb-4">
+        <h4 className="font-semibold text-sm text-gray-800">Challenges:</h4>
+        <p className="text-sm text-gray-700">{selectedProject.challenges}</p>
+      </div>
+
+      <div className="mb-4">
+        <h4 className="font-semibold text-sm text-gray-800">Future Improvements:</h4>
+        <p className="text-sm text-gray-700">{selectedProject.futureImp}</p>
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-4">
+        {selectedProject.tech.map((tech, idx) => (
+          <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs">
+            {tech.icon} {tech.name}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex justify-between">
+        <a href={selectedProject.links.live} target="_blank" rel="noreferrer" className="btn bg-[#3c3c3d] text-white">
+          <FiExternalLink /> Live
+        </a>
+        <a href={selectedProject.links.github} target="_blank" rel="noreferrer" className="btn btn-sm btn-neutral">
+          <FiGithub /> Code
+        </a>
+      </div>
+    </div>
+  </dialog>
+)}
+
+
+
+
+
+
+
+
+
+
     </section>
   );
 };
@@ -188,7 +229,7 @@ const ProjectCard = ({ project, onDetailsClick }) => {
         </div>
         <div className="mt-auto">
           <div className="flex justify-between text-sm">
-            <a href={project.links.live} target="_blank" rel="noreferrer" className="btn-sm bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 flex items-center gap-1">
+            <a href={project.links.live} target="_blank" rel="noreferrer" className="btn-sm bg-[#3c3c3d] text-white px-3 py-1 rounded hover:bg-blue-700 flex items-center gap-1">
               <FiExternalLink /> Live
             </a>
             <a href={project.links.github} target="_blank" rel="noreferrer" className="btn-sm bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 flex items-center gap-1">
