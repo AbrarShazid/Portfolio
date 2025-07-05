@@ -41,10 +41,13 @@ const Banner = () => {
           </div>
 
           <div className="flex flex-col items-center  sm:flex-row gap-4 justify-center lg:justify-start ">
-            <button className="px-8 py-3 bg-white hover:bg-gray-100 text-[#3c3c3d] font-medium rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg flex items-center gap-2 font-primary w-max">
+            <a 
+              href="/Abrar_Shazid.pdf"
+              download
+            className="px-8 py-3 bg-white hover:bg-gray-100 text-[#3c3c3d] font-medium rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg flex items-center gap-2 font-primary w-max">
               <IoCloudDownloadOutline className='h-5 w-5' />
               Download Resume
-            </button>
+            </a>
 
           </div>
         </div>
