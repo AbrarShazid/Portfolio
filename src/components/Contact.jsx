@@ -101,7 +101,7 @@ const Contact = () => {
                 type="text" 
                 id="name" 
                 name='name'
-                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d]  transition outline-0 placeholder-gray-600'
+                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d]  transition outline-0 placeholder-gray-500'
                 placeholder='Enter your name here'
                 required
               />
@@ -113,7 +113,7 @@ const Contact = () => {
                 type="email" 
                 id="email" 
                 name='email'
-                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d] transition outline-0 placeholder-gray-600'
+                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d] transition outline-0 placeholder-gray-500'
                 placeholder='Enter your email here'
                 required
               />
@@ -124,7 +124,7 @@ const Contact = () => {
               <textarea 
                 id="message" 
                 rows="5" 
-                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d] transition outline-0 placeholder-gray-600'
+                className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c3c3d] transition outline-0 placeholder-gray-500'
                 name='message'
                 placeholder='Enter your message here'
                 required

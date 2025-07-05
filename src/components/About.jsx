@@ -1,8 +1,18 @@
 import React from 'react';
 import aboutImg from "../assets/white.jpg";
 import { motion } from "motion/react"
+import { Link } from 'react-scroll';
 
 const About = () => {
+
+  const handleScroll=()=>{
+    const section = document.getElementById("skills");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
   return (
     <div id='about' className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 min-h-screen bg-gray-50 ">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
@@ -29,7 +39,7 @@ const About = () => {
         {/* Content Section */}
         <div className="lg:col-span-2 space-y-6">
           <div className="space-y-3">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white font-primary">
+            <h1 className="text-4xl font-bold text-gray-900  font-primary">
               About Me
             </h1>
             <div className="flex items-center w-full">
@@ -43,13 +53,23 @@ const About = () => {
               I’m Abrar Shazid, a passionate web developer with a strong foundation in full-stack development and a curiosity that constantly pushes me to learn more. I’ve solved over <span className=" font-semibold">500+ coding problems</span> across various platforms — sharpening my problem-solving skills and deepening my understanding of core computer science principles.
             </p>
 
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
+            <p className="text-gray-700  leading-relaxed mt-4">
               Currently studying Computer Science and Engineering, I'm always exploring new technologies and building things that push my understanding further.
             </p>
           </div>
-          <button className=" px-6 py-3 bg-[#3c3c3d] hover:bg-[#2e2e2f] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-            View My Skills
-          </button>
+
+
+          <Link
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                   
+                    className="cursor-pointer             px-6 py-3 bg-[#3c3c3d] hover:bg-[#2e2e2f] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+                  >
+                     View My Skills
+                  </Link>
         </div>
       </div>
     </div>
