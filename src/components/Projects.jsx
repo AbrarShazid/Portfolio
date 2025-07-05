@@ -214,14 +214,14 @@ const ProjectCard = ({ project, onDetailsClick }) => {
       </div>
       <div className="p-5 flex flex-col flex-grow">
         <div>
-          <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+          <h3 className="text-xl font-semibold mb-1 text-black">{project.title}</h3>
           <p className="text-gray-600 text-sm mb-3">{project.description}</p>
           <ul className="list-disc text-sm text-gray-600 list-inside mb-3">
             {project.features.map((f, i) => <li key={i}>{f}</li>)}
           </ul>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tech.map((tech, idx) => (
-              <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs">
+              <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
                 {tech.icon} {tech.name}
               </span>
             ))}
