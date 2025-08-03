@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const About = () => {
 
-  const handleScroll=()=>{
+  const handleScroll = () => {
     const section = document.getElementById("skills");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -57,19 +57,17 @@ const About = () => {
               Currently studying Computer Science and Engineering, I'm always exploring new technologies and building things that push my understanding further.
             </p>
           </div>
-
-
           <Link
-                    to="skills"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                   
-                    className="cursor-pointer             px-6 py-3 bg-[#3c3c3d] hover:bg-[#2e2e2f] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
-                  >
-                     View My Skills
-                  </Link>
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+
+            className="cursor-pointer             px-6 py-3 bg-[#3c3c3d] hover:bg-[#2e2e2f] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+          >
+            View My Skills
+          </Link>
         </div>
       </div>
     </div>

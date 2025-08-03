@@ -1,24 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abrar Shazid</title>
+    <meta name="author" content="Abrar Shazid" />
+    <meta name="description" content="Personal portfolio of Abrar Shazid showcasing web development projects, skills, and contact information." />
+    <meta name="keywords" content="web developer, front-end developer, portfolio, react, javascript, html, css" />
+    
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Abrar Shazid - Web Developer Portfolio" />
+    <meta property="og:description" content="Welcome to my personal portfolio website. Check out my web development projects and get in touch!" />
+    <meta property="og:image" content="https://your-image-url.jpg" />
+    <meta property="og:url" content="https://abrar-shazid.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abrar Shazid - Web Developer Portfolio" />
+    <meta name="twitter:description" content="Welcome to my personal portfolio website. Check out my web development projects and get in touch!" />
+    <meta name="twitter:image" content="https://your-image-url.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    
+    <!-- Title -->
+    <title>Abrar Shazid - Web Developer Portfolio</title>
+    
+    <!-- React Helmet for Dynamic SEO Management -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-helmet/6.1.0/helmet.min.js"></script>
+    
+    <!-- Other necessary meta tags for performance and SEO -->
+    <link rel="canonical" href="https://abrar-shazid.vercel.app/" />
   </head>
-  <body >
+  
+  <body>
     <div id="root"></div>
+
+    <!-- Main React Entry -->
     <script type="module" src="/src/main.jsx"></script>
 
+    <!-- EmailJS Integration (for contact form or other services) -->
     <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "97-dP6JlDXLJhFjBZ",
-      });
-   })();
-</script>
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "97-dP6JlDXLJhFjBZ",
+        });
+      })();
+    </script>
   </body>
 </html>
