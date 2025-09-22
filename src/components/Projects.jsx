@@ -5,9 +5,13 @@ import { FaReact } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiExpress, SiFirebase } from 'react-icons/si';
 
 // Images
-import snowPay1 from "../assets/Snowpay/snowPay-1.png";
-import snowPay2 from "../assets/Snowpay/snowPay-2.png";
-import snowPay3 from "../assets/Snowpay/snowPay-3.png";
+import oneRoof1 from "../assets/OneRoof/1.webp"
+import oneRoof2 from "../assets/OneRoof/2.webp"
+import oneRoof3 from "../assets/OneRoof/3.webp"
+import oneRoof4 from "../assets/OneRoof/4.webp"
+import oneRoof5 from "../assets/OneRoof/5.webp"
+import oneRoof6 from "../assets/OneRoof/6.webp"
+import oneRoof7 from "../assets/OneRoof/7.webp"
 
 import roommate1 from "../assets/RoommateFinder/roommate_1.png";
 import roommate2 from "../assets/RoommateFinder/roommate_2.png";
@@ -17,42 +21,42 @@ import roommate5 from "../assets/RoommateFinder/roommate_5.png";
 import roommate6 from "../assets/RoommateFinder/roommate_6.png";
 import roommate7 from "../assets/RoommateFinder/roommate_7.png";
 
-import food1 from "../assets/DonateFood/food1.png";
-import food2 from "../assets/DonateFood/food2.png";
-import food3 from "../assets/DonateFood/food3.png";
-import food4 from "../assets/DonateFood/food4.png";
-import food5 from "../assets/DonateFood/food5.png";
-import food6 from "../assets/DonateFood/food6.png";
-import food7 from "../assets/DonateFood/food7.png";
-import food8 from "../assets/DonateFood/food8.png";
+import food1 from "../assets/DonateFood/food1.webp";
+import food3 from "../assets/DonateFood/food3.webp";
+import food2 from "../assets/DonateFood/food2.webp";
+import food4 from "../assets/DonateFood/food4.webp";
+import food5 from "../assets/DonateFood/food5.webp";
+import food6 from "../assets/DonateFood/food6.webp";
+import food7 from "../assets/DonateFood/food7.webp";
+import food8 from "../assets/DonateFood/food8.webp";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
     {
-      title: "SnowPay",
-      description: "A payment processing platform which allows users to track, manage, and pay utility bills effortlessly",
+      title: "One Roof",
+      description: "One Roof is a full-featured apartment rental platform that streamlines the experience for users, members, and admins.",
       features: [
-        "Pay bills and update balance in real-time",
-        "Bill payment history",
-        "Fully responsive UI"
+        "Apartment Filter by Rent Range",
+        "Role-Based Dashboards for Admin, Member, and User",
+        "Secure Online Payments with Coupon Support"
       ],
-      challenges: "I faced the challenge of implementing Firebase Authentication. It required a solid understanding of authentication flows and proper configuration, but I overcame it through documentation and testing.",
+      challenges: "I faced the challenge of implementing payment gateway and protecting the dashboard role wise. It required a solid understanding of authorization and proper configuration, but I overcame it through documentation and testing.",
 
-futureImp: "Future enhancements could include integrating JWT-based authorization, implementing a user dashboard, and adding a real-world payment gateway for secure transactions.",
+      futureImp: "Future enhancements could include integrating live chat option and advance filter option",
 
 
-      images: [snowPay1, snowPay2, snowPay3],
+      images: [oneRoof1, oneRoof2, oneRoof3,oneRoof4,oneRoof5,oneRoof6,oneRoof7],
       tech: [
         { name: "React", icon: <FaReact className="text-blue-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-cyan-400" /> }
+        { name: "Express", icon: <SiExpress className="text-black" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> }
       ],
       links: {
-        live: "https://snow-pay-a09.vercel.app/",
-        github: "https://github.com/AbrarShazid/SnowPay-A09",
-        details: "/projects/snowpay"
+        live: "https://one-roof-a12.vercel.app",
+        github: "https://github.com/AbrarShazid/One-Roof-A12",
+       
       }
     },
     {
@@ -63,9 +67,9 @@ futureImp: "Future enhancements could include integrating JWT-based authorizatio
         "Sort listings by rent or filter by room type",
         "Add, update, view, and delete roommate listings"
       ],
- challenges: "I faced challenges implementing the dashboard and managing large, complex forms efficiently. It required careful state handling and UI structuring.",
+      challenges: "I faced challenges implementing the dashboard and managing large, complex forms efficiently. It required careful state handling and UI structuring.",
 
-futureImp: "Future improvements could include adding JWT authentication, a chat feature between the person posting and the one searching for a roommate, and a booking system for reserving rooms.",
+      futureImp: "Future improvements could include adding JWT authentication, a chat feature between the person posting and the one searching for a roommate, and a booking system for reserving rooms.",
 
 
 
@@ -79,7 +83,7 @@ futureImp: "Future improvements could include adding JWT authentication, a chat 
       links: {
         live: "https://roommate-finder-a10.vercel.app/",
         github: "https://github.com/AbrarShazid/Roommate-Finder-A10",
-        details: "/projects/roommate-finder"
+   
       }
     },
     {
@@ -90,9 +94,9 @@ futureImp: "Future improvements could include adding JWT authentication, a chat 
         "Sorting by expire date",
         "Donation/Request history"
       ],
-    challenges: "One of the main challenges I faced in this project was implementing JWT authentication. However, by thoroughly studying documentation and experimenting with various solutions, I was able to successfully overcome it.",
+      challenges: "One of the main challenges I faced in this project was implementing JWT authentication. However, by thoroughly studying documentation and experimenting with various solutions, I was able to successfully overcome it.",
 
-futureImp: "Future improvements could include integrating a dashboard for better user management and adding a real-time chat feature between donors and recipients to enhance communication.",
+      futureImp: "Future improvements could include integrating a dashboard for better user management and adding a real-time chat feature between donors and recipients to enhance communication.",
 
 
 
@@ -106,7 +110,6 @@ futureImp: "Future improvements could include integrating a dashboard for better
       links: {
         live: "https://share-bite-a11.vercel.app/",
         github: "https://github.com/AbrarShazid/Share-Bite-A11",
-        details: "/projects/share-bite"
       }
     }
   ];
@@ -123,54 +126,56 @@ futureImp: "Future improvements could include integrating a dashboard for better
       </div>
 
       {/* DaisyUI Modal */}
-   
-{selectedProject && (
-  <dialog id="project_modal" className="modal modal-open" onClick={() => setSelectedProject(null)}>
-    <div className="modal-box max-w-3xl" onClick={(e) => e.stopPropagation()}>
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold">{selectedProject.title}</h3>
-        <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-gray-800">
-          <FiX className="text-xl" />
-        </button>
-      </div>
 
-      <p className="mb-2 text-sm text-gray-600">{selectedProject.description}</p>
+      {selectedProject && (
+        <dialog id="project_modal" className="modal modal-open" onClick={() => setSelectedProject(null)}>
+          <div className="modal-box max-w-3xl" onClick={(e) => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-xl font-bold">{selectedProject.title}</h3>
+              <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-gray-800">
+                <FiX className="text-xl" />
+              </button>
+            </div>
 
-      <ul className="list-disc list-inside text-sm mb-3 text-gray-700">
-        {selectedProject.features.map((feature, idx) => (
-          <li key={idx}>{feature}</li>
-        ))}
-      </ul>
+            <p className="mb-2 text-sm text-gray-600">{selectedProject.description}</p>
 
-      <div className="mb-4">
-        <h4 className="font-semibold text-sm text-gray-800">Challenges:</h4>
-        <p className="text-sm text-gray-700">{selectedProject.challenges}</p>
-      </div>
+            <ul className="list-disc list-inside text-sm mb-3 text-gray-700">
+              {selectedProject.features.map((feature, idx) => (
+                <li key={idx}>{feature}</li>
+              ))}
+            </ul>
 
-      <div className="mb-4">
-        <h4 className="font-semibold text-sm text-gray-800">Future Improvements:</h4>
-        <p className="text-sm text-gray-700">{selectedProject.futureImp}</p>
-      </div>
+            <div className="mb-4">
+              <h4 className="font-semibold text-sm text-gray-800">Challenges:</h4>
+              <p className="text-sm text-gray-700">{selectedProject.challenges}</p>
+            </div>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {selectedProject.tech.map((tech, idx) => (
-          <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs">
-            {tech.icon} {tech.name}
-          </span>
-        ))}
-      </div>
+            <div className="mb-4">
+              <h4 className="font-semibold text-sm text-gray-800">Future Improvements:</h4>
+              <p className="text-sm text-gray-700">{selectedProject.futureImp}</p>
+            </div>
+            
+          
 
-      <div className="flex justify-between">
-        <a href={selectedProject.links.live} target="_blank" rel="noreferrer" className="btn bg-[#3c3c3d] text-white">
-          <FiExternalLink /> Live
-        </a>
-        <a href={selectedProject.links.github} target="_blank" rel="noreferrer" className="btn btn-sm btn-neutral">
-          <FiGithub /> Code
-        </a>
-      </div>
-    </div>
-  </dialog>
-)}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {selectedProject.tech.map((tech, idx) => (
+                <span key={idx} className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs">
+                  {tech.icon} {tech.name}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex justify-between">
+              <a href={selectedProject.links.live} target="_blank" rel="noreferrer" className="btn bg-[#3c3c3d] text-white">
+                <FiExternalLink /> Live
+              </a>
+              <a href={selectedProject.links.github} target="_blank" rel="noreferrer" className="btn btn-sm btn-neutral">
+                <FiGithub /> Code
+              </a>
+            </div>
+          </div>
+        </dialog>
+      )}
 
 
 

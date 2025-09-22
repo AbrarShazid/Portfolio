@@ -1,7 +1,8 @@
 import React from 'react';
 import bannerImg from "../assets/Black & White.jpg";
 import { IoCloudDownloadOutline } from "react-icons/io5";
-import { FaGithub, FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 const Banner = () => {
@@ -35,8 +36,8 @@ const Banner = () => {
             <a href="https://www.linkedin.com/in/abrar-shazid/" target='_blank' className="border border-white p-0.5  rounded-full  transition">
               <TiSocialLinkedin className="text-[#3c3c3d] text-3xl hover:scale-125 transition  delay-300 rounded-full bg-white " />
             </a>
-            <a href="https://web.facebook.com/AbrarShazid.BD" target='_blank' className="border border-white p-0.5  rounded-full  transition ">
-              <FaFacebook className="text-white text-3xl hover:scale-125  transition  delay-300" />
+            <a href="https://codeforces.com/profile/Abrar_Shazid" target='_blank' className="border border-white p-0.5  rounded-full  transition ">
+              <SiCodeforces className="text-white text-3xl hover:scale-125  transition  delay-300 p-1 " />
             </a>
           </div>
 

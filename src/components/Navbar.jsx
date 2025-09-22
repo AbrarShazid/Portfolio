@@ -36,7 +36,7 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             exact="true"
-            activeClass="text-green-400 font-semibold"
+            activeClass="border-b  border-white font-semibold"
             className="cursor-pointer transition-colors duration-300 "
           >
             Home
@@ -47,7 +47,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass="text-green-400 font-semibold"
+            activeClass="border-b  border-white font-semibold"
             className="cursor-pointer transition-colors duration-300 "
           >
             About
@@ -58,7 +58,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass="text-green-400 font-semibold"
+            activeClass="border-b  border-white font-semibold"
             className="cursor-pointer transition-colors duration-300 "
           >
             Skills
@@ -69,7 +69,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass="text-green-400 font-semibold"
+            activeClass="border-b  border-white font-semibold"
             className="cursor-pointer transition-colors duration-300 "
           >
             Projects
@@ -80,7 +80,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass="text-green-400 font-semibold"
+            activeClass="border-b  border-white font-semibold"
             className="cursor-pointer transition-colors duration-300 "
           >
             Contact

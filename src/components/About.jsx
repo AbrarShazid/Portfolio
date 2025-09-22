@@ -50,7 +50,7 @@ const About = () => {
           <div className="prose prose-lg dark:prose-invert max-w-none">
 
             <p className="text-gray-700  leading-relaxed">
-              I’m Abrar Shazid, a passionate web developer with a strong foundation in full-stack development and a curiosity that constantly pushes me to learn more. I’ve solved over <span className=" font-semibold">500+ coding problems</span> across various platforms — sharpening my problem-solving skills and deepening my understanding of core computer science principles.
+              I’m Abrar Shazid, a passionate web developer with a strong foundation in full-stack development and a curiosity that constantly pushes me to learn more. I’ve solved over <span className=" font-semibold">300+ coding problems</span> across various platforms — sharpening my problem-solving skills and deepening my understanding of core computer science principles.
             </p>
 
             <p className="text-gray-700  leading-relaxed mt-4">
